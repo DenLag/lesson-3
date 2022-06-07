@@ -1,0 +1,11 @@
+def my_func(x, y):
+    try:
+        res = x ** y
+        return res
+    except TypeError:
+        return 'Error'
+
+
+num1 = float(input("Input a number"))
+num2 = int(input("Input a number < 0"))
+print(my_func(num1,num2))
